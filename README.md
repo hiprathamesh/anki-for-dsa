@@ -31,12 +31,12 @@ A sleek, interactive web application that helps developers document and format t
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/question-approach-generator.git
+git clone https://github.com/hiprathamesh/anki-for-dsa.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd question-approach-generator
+cd anki-for-dsa
 ```
 
 3. Install dependencies:
