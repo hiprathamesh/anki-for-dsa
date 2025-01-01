@@ -2,7 +2,7 @@
 
 A sleek, interactive web application that helps developers document and format their algorithm problem-solving approaches. Built with Svelte, this tool makes it easy to organize and share different solution strategies for coding problems.
 
-![Question Approach Generator Demo](/demo.png)
+![Question Approach Generator Demo](public/demo.png)
 
 ## Features
 
