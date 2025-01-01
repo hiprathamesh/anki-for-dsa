@@ -402,8 +402,7 @@
   }
 
   .q-section {
-    flex: 0 0 45%;
-    max-width:600px;
+    width: 40vw;
   }
 
   .container {
@@ -415,25 +414,62 @@
 
   .content-wrapper {
     display: flex;
-    gap: 80px;
+    gap: 40px;
     align-items: flex-start;
     justify-content: center;
   }
 
   .form-section {
-    flex: 0 0 55%;
-    max-width: 800px;
+    width: 60vw;
   }
 
   .output-section {
-    flex: 0 0 35%;
+    width: 40vw;
     position: sticky;
     top: 20px;
-    max-height: calc(100vh - 100px);
     overflow-y: auto;
     padding-right: 10px;
   }
 
+  @media (max-width: 1400px) {
+    .form-section { width: 50%; }
+    .q-section { width: 35%; }
+    .output-section { width: 35%; }
+  }
+
+  @media (max-width: 1200px) {
+    .form-section { width: 45%; }
+    .q-section { width: 32%; }
+    .output-section { width: 32%; }
+  }
+
+  @media (max-width: 992px) {
+    .form-section { width: 42%; }
+    .q-section { width: 30%; }
+    .output-section { width: 30%; }
+  }
+
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .q-section,
+    .form-section,
+    .output-section {
+      flex: 1 1 100%;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .output-section {
+      position: relative;
+      top: 0;
+      max-height: none;
+      padding-right: 0;
+    }
+  }
   h1 {
     text-align: center;
     color: #333;
